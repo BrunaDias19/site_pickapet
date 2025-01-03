@@ -1,0 +1,162 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.perfil-container {
+    background: #E7DDDA;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #57463C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px; /* Ajuste conforme necessário */
+    margin-top: 400px;
+}
+
+.perfil-container h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.foto-upload-container {
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-upload {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1em;
+    border: 5px solid #ebdfdb;
+}
+
+.foto-upload ion-icon {
+    font-size: 3em;
+    color: #e4c5bb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.input-group {
+    background: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    color: #4d4d4d;
+    position: relative;
+}
+
+.input-group ion-icon {
+    color: #4d4d4d;
+    font-size: 1.2em;
+    position: absolute;
+    left: 10px;
+}
+
+.input-group input, .input-group select {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 30px;
+    font-size: 1em;
+    background: transparent;
+}
+
+.input-group input::placeholder, .input-group select::placeholder {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.input-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 10px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 40px;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.voltar {
+    color: #57463C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+.contact-button {
+    background-color: #57463C;
+    color: white;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #43362e;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: bold; 
+}
+
+label {
+    color: #43362e;
+}

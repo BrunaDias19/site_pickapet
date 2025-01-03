@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Pet - Questionário de Correspondência</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/PickaPetIcon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styleQuestionario.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/PickaPetLogo.png" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="explorar.html">Explorar</a></li>
+                    <li><a class="nav-link scrollto active" href="questionario.html">Questionário</a></li>
+                    <li><a class="nav-link scrollto" href="servicos.html">Serviços</a></li>
+                    <li><a class="nav-link scrollto" href="perfil-empresa.html">Perfil</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="login.html" class="get-started-btn scrollto">Log out</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="quest-container">
+        <h2>Encontre os melhores animais para si</h2>
+        <form id="animalQuizForm" onsubmit="handleSubmit(event)">
+            <!-- Seção: Perguntas sobre a pessoa -->
+            <div class="section active" id="section1">
+                <h3>Sobre si</h3>
+                <div class="question">
+                    <h4>1. Quantos metros quadrados tem o interior da sua casa?</h4>
+                    <div class="options">
+                        <input type="radio" id="tamanho1" name="tamanho" value="mais_50">
+                        <label for="tamanho1">Até 50 metros</label>
+                        <input type="radio" id="tamanho2" name="tamanho" value="50_a_100">
+                        <label for="tamanho2">De 50 a 100 metros</label>
+                        <input type="radio" id="tamanho3" name="tamanho" value="mais_100">
+                        <label for="tamanho3">Mais de 100 metros</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>2. Tem jardim ou terraço em casa?</h4>
+                    <div class="options">
+                        <input type="radio" id="exterior1" name="exterior" value="sim">
+                        <label for="exterior1">Sim</label>
+                        <input type="radio" id="exterior2" name="exterior" value="nao">
+                        <label for="exterior2">Não</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>3. No total do dia, quanto tempo tem por dia para passear o animal?</h4>
+                    <div class="options">
+                        <input type="radio" id="tempo1" name="tempo" value="ate_20">
+                        <label for="tempo1">Até 20 min</label>
+                        <input type="radio" id="tempo2" name="tempo" value="20_a_130">
+                        <label for="tempo2">20min até 1h30</label>
+                        <input type="radio" id="tempo3" name="tempo" value="mais_130">
+                        <label for="tempo3">Mais de 1h30</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seção: Perguntas sobre o animal -->
+            <div class="section" id="section2">
+                <h3>As suas preferências</h3>
+                <div class="question">
+                    <h4>4. Procura um cão de raça?</h4>
+                    <div class="options">
+                        <input type="radio" id="raca1" name="raca" value="sim">
+                        <label for="raca1">Sim</label>
+                        <input type="radio" id="raca2" name="raca" value="nao">
+                        <label for="raca2">Não</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>5. Qual o porte do animal que procura?</h4>
+                    <div class="options">
+                        <input type="radio" id="porte1" name="porte" value="mini">
+                        <label for="porte1">Mini</label>
+                        <input type="radio" id="porte2" name="porte" value="pequeno">
+                        <label for="porte2">Pequeno</label>
+                        <input type="radio" id="porte3" name="porte" value="medio">
+                        <label for="porte3">Médio</label>
+                        <input type="radio" id="porte4" name="porte" value="grande">
+                        <label for="porte4">Grande</label>
+                        <input type="radio" id="porte5" name="porte" value="gigante">
+                        <label for="porte5">Gigante</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>6. Existem animais que necessitam de escovagem frequente e que largam pelo, o que requer cuidados e tarefas adicionais em casa. Estaria disposto/a a ter um animal que requer estes cuidados?</h4>
+                    <div class="options">
+                        <input type="radio" id="pelo1" name="pelo" value="sim">
+                        <label for="pelo1">Sim</label>
+                        <input type="radio" id="pelo1" name="pelo" value="nao">
+                        <label for="pelo2">Não</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>7. Existem muitos animais em abrigos que têm problemas comportamentais, problemas médicos e que são mais velhos. Estaria disposto/a a adotar um animal com estas características?</h4>
+                    <div class="options">
+                        <input type="radio" id="problemas1" name="problemas" value="sim">
+                        <label for="problemas1">Sim</label>
+                        <input type="radio" id="problemas2" name="problemas" value="nao">
+                        <label for="problemas2">Não</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation" id="navigationContainer">
+                <button type="button" id="prevBtn" onclick="showPrevSection()" style="display: none;">Anterior</button>
+                <button type="button" id="nextBtn" onclick="showNextSection()">Próximo</button>
+                <button type="submit" id="submitBtn" style="display: none;">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var currentSection = 1;
+        var totalSections = 2;
+
+        function showNextSection() {
+            if (validateCurrentSection()) {
+                document.getElementById('section' + currentSection).style.display = 'none';
+                currentSection++;
+                document.getElementById('section' + currentSection).style.display = 'block';
+                updateNavigationButtons();
+            } else {
+                alert('Por favor, responda todas as perguntas para continuar.');
+            }
+        }
+
+        function showPrevSection() {
+            document.getElementById('section' + currentSection).classList.remove('active');
+            currentSection--;
+            document.getElementById('section' + currentSection).classList.add('active');
+            updateNavigationButtons();
+        }
+
+        function updateNavigationButtons() {
+            var prevBtn = document.getElementById('prevBtn');
+            var nextBtn = document.getElementById('nextBtn');
+            var submitBtn = document.getElementById('submitBtn');
+
+            if (currentSection === 1) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'inline-block';
+            }
+
+            if (currentSection === totalSections) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'inline-block';
+            } else {
+                nextBtn.style.display = 'inline-block';
+                submitBtn.style.display = 'none';
+            }
+        }
+
+        function validateCurrentSection() {
+            var currentSectionQuestions = document.querySelectorAll('#section' + currentSection + ' .question');
+            var allAnswered = true;
+            currentSectionQuestions.forEach((question) => {
+                var inputs = question.querySelectorAll('input[type="radio"]');
+                var answered = Array.from(inputs).some(input => input.checked);
+                if (!answered) {
+                    allAnswered = false;
+                }
+            });
+            return allAnswered;
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            if (validateCurrentSection()) {
+                alert('Questionário enviado com sucesso!');
+            } else {
+                alert('Por favor, responda todas as perguntas antes de enviar.');
+            }
+        }
+
+        // Initial call to set button states correctly
+        updateNavigationButtons();
+    </script>
+    <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

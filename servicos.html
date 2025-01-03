@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Pet - Serviços publicados</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/PickaPetIcon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styleServicos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/PickaPetLogo.png" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="explorar.html">Explorar</a></li>
+                    <li><a class="nav-link scrollto" href="questionario.html">Questionário</a></li>
+                    <li><a class="nav-link scrollto active" href="servicos.html">Serviços</a></li>
+                    <li><a class="nav-link scrollto" href="perfil-empresa.html">Perfil</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="login.html" class="get-started-btn scrollto">Log out</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="header">
+        <h1>Serviços Publicados</h1>
+        <button onclick="publicarServico()">Publicar Novo Serviço</button>
+    </div>
+    <div class="services-container">
+        <div class="service">
+            <div class="info">
+                <h2>Serviço 1</h2>
+                <p>Localização do serviço 1</p>
+            </div>
+            <div class="price">€50</div>
+            <button onclick="verDetalhes()">Ver Detalhes</button>
+        </div>
+        <div class="service">
+            <div class="info">
+                <h2>Serviço 2</h2>
+                <p>Localização do serviço 2</p>
+            </div>
+            <div class="price">€75</div>
+            <button onclick="verDetalhes()">Ver Detalhes</button>
+        </div>
+        <div class="service">
+            <div class="info">
+                <h2>Serviço 3</h2>
+                <p>Localização do serviço 3</p>
+            </div>
+            <div class="price">€100</div>
+            <button onclick="verDetalhes()">Ver Detalhes</button>
+        </div>
+    </div>
+
+    <script>
+        function publicarServico() {
+            window.location.href = 'add-servico.html';
+        }
+        function verDetalhes() {
+            window.location.href = 'servicos-detalhes.html';
+        }
+    </script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a Pet - Perfil do Utilizador</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/PickaPetIcon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styleExplorar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'>
+    <link rel="stylesheet" href="assets/css/stylePerfilAdopt.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/PickaPetLogo.png" class="img-fluid"></a>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto" href="explorar.html">Explorar</a></li>
+                <li><a class="nav-link scrollto" href="questionario.html">Questionário</a></li>
+                <li><a class="nav-link scrollto" href="servicos.html">Serviços</a></li>
+                <li><a class="nav-link scrollto active" href="perfil-adopt.html">Perfil</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <a href="login.html" class="get-started-btn scrollto">Log out</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="perfil-container">
+        <h2>Perfil de Utilizador</h2>
+        <div class="content-wrapper">
+            <div class="foto-upload-container">
+                <input type="file" id="upload" style="display:none"/>
+                <label for="upload">
+                    <div class="foto-upload">
+                        <ion-icon name="camera-outline"></ion-icon>
+                    </div>
+                </label>
+            </div>
+            <div class="form-container">
+            <form>
+                <div class="input-wrapper">
+                    <label for="nome-utilizador">Nome de utilizador</label>
+                    <div class="input-group">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="nome-utilizador" name="nome-utilizador" placeholder="Nome de utilizador">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="tempo-disponivel">Tempo disponível</label>
+                    <div class="input-group">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <input type="text" id="tempo-disponivel" name="tempo-disponivel" placeholder="Tempo disponível">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="tipo-habitacao">Tipo de habitação</label>
+                    <div class="input-group">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <input type="text" id="tipo-habitacao" name="tipo-habitacao" placeholder="Tipo de habitação">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="idosos-casa">Idosos em casa?</label>
+                    <div class="input-group">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <select id="idosos-casa" name="idosos-casa">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="criancas-casa">Crianças em casa?</label>
+                    <div class="input-group">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <select id="criancas-casa" name="criancas-casa">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="primeiro-animal">Primeiro animal?</label>
+                    <div class="input-group">
+                        <ion-icon name="paw-outline"></ion-icon>
+                        <select id="primeiro-animal" name="primeiro-animal">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button type="button" class="contact-button">Guardar</button>
+                </div>
+            </form>
+            <div class="footer">
+                <a class="voltar" href="index.html">Voltar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
